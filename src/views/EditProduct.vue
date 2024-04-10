@@ -58,7 +58,7 @@ export default {
   methods: {
     async loadUser(userId) {
       try {
-        const response = await axios.get(`http://localhost:3000/api/users/${userId}`);
+        const response = await axios.get(`https://apiusuarios-evxn.onrender.com/api/users/${userId}`);
         this.editedUser = response.data;
       } catch (error) {
         console.error('Error al obtener el usuario:', error);
@@ -66,7 +66,7 @@ export default {
     },
     async updateUser() {
       try {
-        await axios.put(`http://localhost:3000/api/users/${this.editedUser.id}`, this.editedUser);
+        await axios.put(`https://apiusuarios-evxn.onrender.com/api/users/${this.editedUser.id}`, this.editedUser);
         console.log('Usuario actualizado correctamente');
         // Mostrar alerta de éxito
         Swal.fire('¡Éxito!', 'Usuario actualizado exitosamente', 'success');

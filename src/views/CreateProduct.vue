@@ -53,7 +53,7 @@ export default {
   methods: {
     async createUser() {
       try {
-        const response = await axios.post('http://localhost:3000/api/users', this.user);
+        const response = await axios.post('https://apiusuarios-evxn.onrender.com/api/users', this.user);
         console.log('Usuario creado:', response.data);
         // Mostrar alerta de éxito
         Swal.fire('¡Éxito!', 'Usuario creado exitosamente', 'success');

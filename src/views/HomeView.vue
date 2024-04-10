@@ -13,7 +13,8 @@
     <div class="col-lg-8 offset-lg-2 col-sm-12">
       <div class="table-responsive">
         <table class="table table-bordered table-hover border-dark">
-          <thead class=" bg-info">
+          <thead class=" bg-info
+          ">
             <tr>
               <th>#</th>
               <th>Nombre</th>
@@ -63,7 +64,7 @@ export default {
   methods: {
     async getUsers() {
   try {
-    const url = `http://localhost:3000/api/users?nombre=${this.categoryFilter.trim()}`;
+    const url = `https://apiusuarios-evxn.onrender.com/api/users?nombre=${this.categoryFilter.trim()}`;
     const response = await axios.get(url);
     this.users = response.data;
   } catch (error) {
@@ -90,7 +91,7 @@ export default {
       // Si el usuario confirma la eliminación
       if (result.isConfirmed) {
         try {
-          const response = await axios.delete(`http://localhost:3000/api/users/${userId}`);
+          const response = await axios.delete(`https://apiusuarios-evxn.onrender.com/api/users/${userId}`);
           console.log('Usuario eliminado:', response.data);
           // Mostrar alerta de éxito
           await Swal.fire(

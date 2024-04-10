@@ -85,7 +85,7 @@
       },
       methods:{
           getProducts(){
-              axios.get('http://localhost:3000/api/users').then(
+              axios.get('https://apiusuarios-evxn.onrender.com/api/users').then(
                   response => (
                       this.products = response.data
                   )
