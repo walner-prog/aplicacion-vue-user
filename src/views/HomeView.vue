@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row  ">
     <div class="col-lg-4 offset-lg-2 mb-3">
       <input type="text" v-model="categoryFilter" @input="searchUsers" class="form-control" placeholder="Buscar por nombre de usuario">
     </div>
@@ -8,12 +8,13 @@
         <i class="fa-solid fa-plus"></i> Crear Usuario
       </button>
     </div>
+    
   </div>
   <div class="row">
     <div class="col-lg-8 offset-lg-2 col-sm-12">
       <div class="table-responsive">
         <table class="table table-bordered table-hover border-dark">
-          <thead class=" bg-info
+          <thead class=" bg-success
           ">
             <tr>
               <th>#</th>
@@ -48,10 +49,12 @@
 </template>
 
 <script>
+
 import Swal from 'sweetalert2';
 import axios from 'axios';
 
 export default {
+ 
   data() {
     return {
       users: [],

@@ -20,7 +20,7 @@
                 <input type="text" id="rol" v-model="editedUser.rol" class="form-control" required>
               </div>
               <br>
-              <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+              <button type="submit" class="btn btn-success">Guardar Cambios</button>
               <div class="row mt-3">
                 <div class="col-md-6 offset-md-3">
                   <router-link to="/home" class="btn btn-secondary mb-3">

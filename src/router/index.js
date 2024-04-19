@@ -9,6 +9,7 @@ import GraficaView from '../views/GraficaView.vue';
 import ReporteView from '../views/ReporteView.vue';
 import Login       from '../views/Login.vue';
 import RegisterForm from '../views/RegisterForm.vue';
+import UserListPage from '../views/UserListPage.vue';
 const routes = [
   {
     path: '/',
@@ -59,6 +60,12 @@ const routes = [
     path: '/login', // Ruta para la vista de inicio de sesión
     name: 'login',
     component: Login // Componente de inicio de sesión
+  },
+
+  {
+    path: '/users',
+    name: 'UserList',
+    component: UserListPage // Asocia la ruta a la nueva vista
   }
   
   

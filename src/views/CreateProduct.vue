@@ -20,7 +20,7 @@
                 <input type="text" class="form-control" id="rol" v-model="user.rol" required>
               </div>
               <br>
-              <button type="submit" class="btn btn-primary text-center">Crear Usuario</button>
+              <button type="submit" class="btn btn-success text-center">Crear Usuario</button>
               <div class="row mt-3">
                 <div class="col-md-6 offset-md-3">
                   <router-link to="/home" class="btn btn-secondary mb-3">

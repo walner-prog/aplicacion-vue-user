@@ -7,8 +7,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
           <li class="nav-item" :class="{ 'active': $route.path === '/home' }">
             <router-link to="/home" class="nav-link" aria-current="page">Mostrar</router-link>
+          </li>
+          <li class="nav-item" :class="{ 'active': $route.path === '/users' }">
+            <router-link to="/users" class="nav-link">Usuarios</router-link>
           </li>
           <li class="nav-item" :class="{ 'active': $route.path === '/reporte' }">
             <router-link to="/reporte" class="nav-link">Reporte</router-link>
